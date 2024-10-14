@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="google-site-verification" content="NyZ4fpOR_5GDcGtbZiSnH-Cmdircuy25zitbI9UKTdY" />
     <title>Home Page</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <meta name="google-site-verification" content="NyZ4fpOR_5GDcGtbZiSnH-Cmdircuy25zitbI9UKTdY" />
 </head>
 <body>
     <div class="home-container">
@@ -44,24 +43,3 @@
                 <label for="newPassword">Password</label>
                 <input type="password" id="newPassword" name="password" required>
             </div>
-            <button type="submit">Register</button>
-        </form>
-        <p class="signin-link">Already have an account? <a href="#" onclick="showLogin()">Sign In</a></p>
-        <p class="privacy-policy-link"><a href="privacy-policy.html">Privacy Policy</a></p>
-        <p class="terms-of-service-link"><a href="terms-of-service.html">Terms of Service</a></p>
-    </div>
-    <script>
-        function showLogin() {
-            document.getElementById('loginContainer').style.display = 'block';
-            document.getElementById('registerContainer').style.display = 'none';
-            document.querySelector('.home-container').style.display = 'none';
-        }
-
-        function showRegister() {
-            document.getElementById('registerContainer').style.display = 'block';
-            document.getElementById('loginContainer').style.display = 'none';
-            document.querySelector('.home-container').style.display = 'none';
-        }
-    </script>
-</body>
-</html>
