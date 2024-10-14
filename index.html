@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="home-container">
+        <h1>Welcome to Our Website</h1>
+        <div class="button-group">
+            <button onclick="showLogin()">Sign In</button>
+            <button onclick="showRegister()">Register</button>
+        </div>
+    </div>
+    <div class="login-container" id="loginContainer" style="display: none;">
+        <h2>Login</h2>
+        <form id="loginForm" action="login" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="#" onclick="showRegister()">Sign Up</a></p>
+    </div>
+    <div class="register-container" id="registerContainer" style="display: none;">
+        <h2>Register</h2>
+        <form id="registerForm" action="register" method="POST">
+            <div class="input-group">
+                <label for="newUsername">Username</label>
+                <input type="text" id="newUsername" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="newPassword">Password</label>
+                <input type="password" id="newPassword" name="password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <p class="signin-link">Already have an account? <a href="#" onclick="showLogin()">Sign In</a></p>
+    </div>
+    <script>
+        function showLogin() {
+            document.getElementById('loginContainer').style.display = 'block';
+            document.getElementById('registerContainer').style.display = 'none';
+            document.querySelector('.home-container').style.display = 'none';
+        }
+
+        function showRegister() {
+            document.getElementById('registerContainer').style.display = 'block';
+            document.getElementById('loginContainer').style.display = 'none';
+            document.querySelector('.home-container').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
