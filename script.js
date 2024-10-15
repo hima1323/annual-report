@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const clientId = 'YOUR_CLIENT_ID';
         const redirectUri = 'YOUR_REDIRECT_URI';
         const scope = 'YOUR_SCOPES';
-        const authUrl = `https://oauth-provider.com/auth?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=${scope}`;
+        const authUrl = `https://oauth-provider.com/auth?client_id=${728102141340-4kigp8j43lo05g4qnrptfm36oj9he5gm.apps.googleusercontent.com}&redirect_uri=${redirectUri}&response_type=code&scope=${scope}`;
         
         window.location.href = authUrl;
     });
